@@ -1,4 +1,3 @@
-import * as THREE from 'three';
 import { TrackballControls } from './TrackballControls';
 import { CSS3DRenderer, CSS3DObject } from './CSS3DRenderer';
 

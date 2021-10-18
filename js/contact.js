@@ -1,5 +1,5 @@
 import "/style.css";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+import { OrbitControls } from "./OrbitControls"
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -50,7 +50,7 @@ const form = new THREE.Mesh(geometry2, material2)
 form.position.x = 40
 scene.add(form)
 
-var url2 = '/test/form.html'
+var url2 = '../form.html'
 THREEx.Linkify(domEvents, form, url2)
 
 //Whatsapp
@@ -69,7 +69,7 @@ var url3 = 'https://wa.link/mya3xd'
 THREEx.Linkify(domEvents, Whatsapp, url3)
 
 //Background
-const callTexture = new THREE.TextureLoader().load("./bg.jpg");
+const callTexture = new THREE.TextureLoader().load("img/bg.jpg");
 scene.background = callTexture;
 
 //controls.update() must be called after any manual changes to the camera's transform
